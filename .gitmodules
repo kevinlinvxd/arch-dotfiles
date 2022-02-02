@@ -1,15 +1,15 @@
 [submodule ".vim/pack/plugins/start/fugitive"]
 	path = .vim/pack/plugins/start/fugitive
-	url = https://github.com/kevinlinvxd/arch-dotfiles
+	url = https://github.com/tpope/vim-fugitive
 [submodule ".vim/pack/plugins/start/lightline"]
 	path = .vim/pack/plugins/start/lightline
-	url = https://github.com/kevinlinvxd/arch-dotfiles
+	url = https://github.com/itchyny/lightline.vim
 [submodule ".vim/pack/plugins/start/nerdtree"]
 	path = .vim/pack/plugins/start/nerdtree
-	url = https://github.com/kevinlinvxd/arch-dotfiles
+	url = https://github.com/preservim/nerdtree
 [submodule ".vim/pack/plugins/start/vim-colors-solarized"]
 	path = .vim/pack/plugins/start/vim-colors-solarized
-	url = https://github.com/kevinlinvxd/arch-dotfiles
+	url = https://github.com/altercation/vim-colors-solarized
 [submodule ".vim/pack/plugins/start/rainbow"]
 	path = .vim/pack/plugins/start/rainbow
-	url = https://github.com/kevinlinvxd/arch-dotfiles
+	url = https://github.com/luochen1990/rainbow
