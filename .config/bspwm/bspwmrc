@@ -16,7 +16,7 @@ bspc config top_padding 40
 
 # Define Rules
 
-feh --bg-fill ~/Downloads/Wallpapers/yasuo.jpg
+feh --bg-fill ~/Downloads/Wallpapers/brutal-bg.webp
 
 # Auto start stuff
 #polybar bspwm-bar &
