@@ -33,7 +33,7 @@ ctrl + alt + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
-super + shift + {c,q} 
+super + shift + {w,q} 
 	bspc node -{c,k}
 
 # Fullscreen or Monocle
