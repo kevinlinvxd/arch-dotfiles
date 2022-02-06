@@ -4,7 +4,7 @@
 super + Return
 	alacritty
 
-##------------ Apps and Utilies -----------##
+##------------ Apps and Utilites -----------##
 
 # Launch Apps
 super + shift + d
@@ -19,6 +19,9 @@ super + shift + s
 super + space
 	rofi -show drun
 
+ctrl + shift + Print
+	maim -s | xclip -selection clipboard -t image/png
+
 ##---------- Bspwm ----------##
 
 # Reload Keybindings
@@ -30,7 +33,7 @@ ctrl + alt + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
-super + shift + q
+super + shift + {c,q} 
 	bspc node -{c,k}
 
 # Fullscreen or Monocle
@@ -45,7 +48,7 @@ super + {h,v,q}
 super + ctrl + {1-9}
 	bspc node -o 0.{1-9}
 
-# Toggle beetwen floating & tiled
+# Toggle between floating & tiled
 super + shift + space
     bspc node -t "~"{floating,tiled}
 
@@ -83,7 +86,7 @@ super + control + {Left,Right,Up,Down}
 
 ## Shrinking windows
 super + alt + {Left,Right,Up,Down}
-	bspc node -z {left 20 0,right -20 0,top 0 20,bottom 0 -20}
+	bspc node -z {right 20 0,left 20 0,bottom 0 -20,top 0 20}
 
 ## Move floating windows
 alt + shift + {Left,Down,Up,Right}
