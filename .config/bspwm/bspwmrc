@@ -15,7 +15,7 @@ bspc config presel_feedback_color "#d8b4bd"
 bspc config top_padding 40
 
 # Define Rule 
-bspc rule -a discord desktop='^II' follow=off
+bspc rule -a discord desktop='II' follow=off
 
 feh --bg-fill ~/Downloads/Wallpapers/opal.webp
 

@@ -1,4 +1,4 @@
-alias dotfiles='/usr/bin/git --git-dir=$HOME/arch-dotfiles/ --work-tree=$HOME' 
+alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
 
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
@@ -17,7 +17,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
                      
-# Use powerline
 USE_POWERLINE="true"
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 

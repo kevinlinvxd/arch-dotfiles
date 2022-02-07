@@ -7,7 +7,7 @@
     width = (100, 750)
     #height = 100
     origin = top-center
-    offset = 5x0
+    offset = 0x10
 
     ### End New Settings ###
 
