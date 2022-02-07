@@ -1,4 +1,4 @@
-# arch-dotfiles
+# dotfiles
 
 ## Introduction
 
