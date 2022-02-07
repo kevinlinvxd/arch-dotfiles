@@ -149,9 +149,9 @@ except Exception as e:
         if hour < 12:
             greeting = 'Good Morning, Kevin'
         elif hour < 18:
-            greeting = "Good Afternoon, Kevin"
+            greeting = 'Good Afternoon, Kevin'
         else:
-            greeting = "Good Evening, Kevin"
-        print("{}!".format(greeting))
+            greeting = 'Good Evening, Kevin'
+        print('{}!'.format(greeting))
     else:
         print(e)
