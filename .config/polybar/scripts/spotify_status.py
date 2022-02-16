@@ -146,7 +146,9 @@ except Exception as e:
         # Handle greeting based on time of day
         currTime = datetime.datetime.now()
         hour = currTime.hour
-        if hour < 12:
+        if hour < 6:
+            greeting = 'Good Night, Kevin'
+        elif hour < 12:
             greeting = 'Good Morning, Kevin'
         elif hour < 18:
             greeting = 'Good Afternoon, Kevin'
