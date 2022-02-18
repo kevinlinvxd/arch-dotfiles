@@ -10,11 +10,11 @@ set laststatus=2
 set noshowmode
 
 "Enable Solarized Theme
-colorscheme solarized
+colorscheme default
 
 "Lightline Customization
 let g:lightline = {
-      \ 'colorscheme': 'one',
+      \ 'colorscheme': 'wombat',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]

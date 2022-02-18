@@ -17,7 +17,12 @@ bspc config top_padding 40
 # Define Rule 
 bspc rule -a discord desktop='IV' follow=off
 
+#Background
 feh --bg-fill ~/Downloads/Wallpapers/opal.webp
+
+#Fix Intellij
+export AWT_TOOLKIT=MToolkit
+wmname compiz
 
 # Auto start stuff
 ~/.config/polybar/launch.sh &
