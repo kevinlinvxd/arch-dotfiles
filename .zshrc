@@ -4,7 +4,7 @@ export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
 export HISTFILE=~/.zsh_history
-export HISTSIZE=50
+export HISTSIZE=100
 export SAVEHIST=1000
 
 setopt auto_cd
@@ -24,3 +24,4 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 source /usr/share/nvm/init-nvm.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
