@@ -20,18 +20,26 @@ This repository serves as a way for me to keep track of and maintain my configur
 At some point, I may write up a simple script to assist with installing these various configuration files. For now, it can be done the manual way.
 
 1. Clone the repository
-`git clone https://github.com/kevinlinvxd/dotfiles.git`
+```
+git clone https://github.com/kevinlinvxd/dotfiles.git
+```
 
 2. Change into the repo directory
-`cd dotfiles`
+```
+cd dotfiles
+```
 
 3. Move the config files to new .config folder
-`cp -r .config/{alacritty,bspwm,dunst,neofetch,polybar,rofi,sxhkd} ~/.config`
+```
+cp -r .config/{alacritty,bspwm,dunst,neofetch,polybar,rofi,sxhkd} ~/.config
+```
 
 4. Give exec perms to scripts and some files
-`chmod +x ~/.config/polybar/launch.sh
- chmod +x ~/.config/polybar/scripts/*
- chmod +x ~/.config/bspwm/bspwmrc`
+```
+chmod +x ~/.config/polybar/launch.sh
+chmod +x ~/.config/polybar/scripts/*
+chmod +x ~/.config/bspwm/bspwmrc
+```
 
 ## License
 
