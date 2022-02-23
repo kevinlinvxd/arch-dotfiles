@@ -1,5 +1,18 @@
-alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' 
+neofetch
 
+alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+
+udrive=/run/user/1000/gvfs/smb-share:server=myfiles.iastate.edu,share=users/klin
+
+if [[ -d $udrive ]]
+then
+    hash -d udrive=$udrive
+fi
+ 
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+  
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
@@ -12,11 +25,7 @@ setopt extended_glob
 
 autoload -Uz compinit
 compinit
-
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-                     
+                   
 USE_POWERLINE="true"
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
