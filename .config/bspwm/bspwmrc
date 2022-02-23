@@ -1,6 +1,5 @@
 #! /bin/sh
 
-pgrep -x sxhkd > /dev/null || sxhkd &
 bspc monitor -d I II III IV V VI VII VIII
 bspc config border_width          2
 bspc config window_gap            12
@@ -16,6 +15,7 @@ bspc config top_padding 40
 
 # Define Rule 
 bspc rule -a discord desktop='IV' follow=off
+bspc rule -a Zathura state=tiled
 
 #Background
 feh --bg-fill ~/Downloads/Wallpapers/opal.webp
@@ -25,6 +25,7 @@ export AWT_TOOLKIT=MToolkit
 wmname compiz
 
 # Auto start stuff
+pgrep -x sxhkd > /dev/null || sxhkd &
 ~/.config/polybar/launch.sh &
 picom --experimental-backends &
 dunst ~/.config/dunst/dunstrc &
