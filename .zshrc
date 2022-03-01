@@ -1,5 +1,3 @@
-neofetch
-
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 udrive=/run/user/1000/gvfs/smb-share:server=myfiles.iastate.edu,share=users/klin
@@ -12,7 +10,9 @@ fi
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-  
+
+export MANPAGER="less -R --use-color -Dd+r -Du+b"
+export LESS='-R --use-color -Dd+r$Du+b'  
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
