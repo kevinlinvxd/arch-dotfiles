@@ -1,14 +1,14 @@
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias feh='feh --scale-down --auto-zoom'
+
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 udrive=/run/user/1000/gvfs/smb-share:server=myfiles.iastate.edu,share=users/klin
 
-if [[ -d $udrive ]]
-then
+if [[ -d $udrive ]]; then
     hash -d udrive=$udrive
-fi
- 
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
