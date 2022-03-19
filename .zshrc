@@ -17,8 +17,9 @@ export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
 export HISTFILE=~/.zsh_history
-export HISTSIZE=100
-export SAVEHIST=1000
+export HISTSIZE=300
+export SAVEHIST=1500
+export HISTCONTROL=ignoreboth
 
 setopt auto_cd
 setopt extended_glob
