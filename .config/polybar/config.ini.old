@@ -42,15 +42,46 @@ font-5 = "Noto Sans CJK HK:size=10;2"
 
 [bar/primary]
 inherit = bar/main
-width = 99.5%
+width = 29%
 height = 30
 
 offset-x = 6
 offset-y = 4
 
+modules-left = sysmenu date time alsa ssid battery spotify
+
+[bar/secondary]
+inherit = bar/main
+width = 29%
+height = 30
+
+offset-x = 70.7%
+offset-y = 4
+
+module-margin-left = 0
+
+tray-offset-x = -12
+tray-offset-y = 0
+tray-maxsize = 18
+tray-detached = true
+tray-position = right
+tray-padding = 1
+tray-scale = 1.0
+pseudo-transparency = true
+
 modules-left = workspaces name title
-modules-right = date time battery alsa ssid sysmenu
-modules-center = spotify
+
+#[bar/music]
+#inherit = bar/main
+#enable-ipc=true
+#module-margin-left = 0
+
+#width = 25%
+#height = 30
+#offset-x = 37.5%
+#offset-y = 10
+
+#modules-left = spotify spotify-prev spotify-play-pause spotify-next
 
 ;; Modules
 
@@ -163,7 +194,7 @@ format-foreground = ${color.white}
 format-font = 2
 
 label = %title%
-label-maxlen = 60
+label-maxlen = 40
 label-empty = Desktop
 
 [module/name]
@@ -183,7 +214,7 @@ label-empty =
 [module/spotify]
 type = custom/script
 interval = 1
-label-maxlen = 100
+label-maxlen = 35
 format = <label>
 format-font = 5
 format-prefix = "  "
