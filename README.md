@@ -21,7 +21,7 @@ At some point, I may write up a simple script to assist with installing these va
 
 1. Clone the repository
 ```
-git clone https://github.com/kevinlinvxd/dotfiles.git
+git clone git@github.com:kevinlinvxd/dotfiles.git
 ```
 
 2. Change into the repo directory
