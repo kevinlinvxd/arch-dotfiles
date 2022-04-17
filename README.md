@@ -31,7 +31,7 @@ cd dotfiles
 
 3. Move the config files to new .config folder
 ```
-cp -r .config/{alacritty,bspwm,dunst,neofetch,polybar,rofi,sxhkd} ~/.config
+cp -r .config/{alacritty,bspwm,dunst,neofetch,polybar,rofi,sxhkd,htop} ~/.config
 ```
 
 4. Give exec perms to scripts and some files
