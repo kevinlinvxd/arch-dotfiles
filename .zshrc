@@ -1,5 +1,7 @@
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias feh='feh --scale-down --auto-zoom'
+alias mount-isu='gio mount smb://myfiles.iastate.edu/users/klin'
+alias unmount-isu='gio mount -u smb://myfiles.iastate.edu/users/klin'
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -20,6 +22,10 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=350
 export SAVEHIST=1500
 export HISTCONTROL=ignoreboth
+
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export OPENSTACK=".local/bin/openstack"
+export PATH=$PATH:$GEM_HOME/bin:$OPENSTACK
 
 setopt auto_cd
 setopt extended_glob
