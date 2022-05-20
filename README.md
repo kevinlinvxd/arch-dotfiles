@@ -4,7 +4,7 @@
 
 This repository serves as a way for me to keep track of and maintain my configuration files on Linux.
 
-![My Arch Neofetch](https://raw.githubusercontent.com/kevinlinvxd/arch-dotfiles/master/misc/arch-neofetch.png)
+![My Arch Desktop](https://raw.githubusercontent.com/kevinlinvxd/dotfiles/master/misc/arch-desktop.png)
 
 ## Contents
 
