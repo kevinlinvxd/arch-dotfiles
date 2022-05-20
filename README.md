@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository serves as a way for me to keep track of and maintain my configuration files on Linux. If I ever want to switch to a new distro or lose my data, I have an easy way to get to a semi-working state.
+This repository serves as a way for me to keep track of and maintain my configuration files on Linux.
 
 ![My Arch Neofetch](https://raw.githubusercontent.com/kevinlinvxd/arch-dotfiles/master/misc/arch-neofetch.png)
 
