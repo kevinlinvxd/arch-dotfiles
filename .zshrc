@@ -39,15 +39,15 @@ compinit
                    
 USE_POWERLINE="true"
 
-# Clear Terminal Buffer with Ctrl L
-function clear-screen-and-buffer() {
-    echoti civis >"$TTY"
-    printf '%b' '\e[H\e[2J' >"$TTY"
-    zle .reset-prompt
-    zle -R
-    printf '%b' '\e[3J' >"$TTY"
-    echoti cnorm >"$TTY"
-}
+# Clear Terminal Buffer with Ctrl L --disabled scrollback in various Terminals
+# function clear-screen-and-buffer() {
+#    echoti civis >"$TTY"
+#    printf '%b' '\e[H\e[2J' >"$TTY"
+#    zle .reset-prompt
+#    zle -R
+#    printf '%b' '\e[3J' >"$TTY"
+#	echoti cnorm >"$TTY"
+# }
 
 # Exit on Ctrl D while CLI is filled
 function exit_zsh() {
@@ -55,8 +55,8 @@ function exit_zsh() {
 }
 
 zle -N exit_zsh
-zle -N clear-screen-and-buffer
-bindkey '^L' clear-screen-and-buffer
+# zle -N clear-screen-and-buffer
+# bindkey '^L' clear-screen-and-buffer
 bindkey '^D' exit_zsh
 
 # Source various plugins
