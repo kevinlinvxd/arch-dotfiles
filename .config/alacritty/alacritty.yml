@@ -69,7 +69,7 @@ window:
 # Window title
 #title: Alacritty
 # Allow terminal applications to change Alacritty's window title.
-#dynamic_title: true
+  dynamic_title: true
 # Window class (Linux/BSD only):
 #class:
 # Application instance name
@@ -81,10 +81,10 @@ window:
 # Override the variant of the GTK theme. Commonly supported values are `dark`
 # and `light`. Set this to `None` to use the default theme variant.
 gtk_theme_variant: dark
-scrolling:
+# scrolling:
 # Maximum number of lines in the scrollback buffer.
 # Specifying '0' will disable scrolling.
-  history: 0
+# history: 1000
 # Scrolling distance multiplier.
 #multiplier: 3
 # Font configuration
@@ -154,3 +154,6 @@ colors:
     cyan: '#89ddff'
     white: '#ffffff' # Arbitrary
 theme: Material-Theme
+
+key_bindings:
+  - { key: Return,   mods: Control|Alt, action: SpawnNewInstance }

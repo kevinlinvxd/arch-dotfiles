@@ -14,8 +14,8 @@ super + shift + Return
 super + shift + d
 	discord
 
-super + shift + f
-	firefox
+super + shift + b
+	chromium
 
 super + shift + s
 	spotify
