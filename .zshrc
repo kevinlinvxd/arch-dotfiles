@@ -26,8 +26,8 @@ export HISTSIZE=350
 export SAVEHIST=1500
 export HISTCONTROL=ignoreboth
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
-export OPENSTACK=".local/bin/openstack"
-export PATH=$PATH:$GEM_HOME/bin:$OPENSTACK
+export BIN=".local/bin/*"
+export PATH=$PATH:$GEM_HOME/bin:$BIN
 
 # Setopt
 setopt auto_cd

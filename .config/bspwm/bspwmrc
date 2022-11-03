@@ -10,7 +10,7 @@ if [[ "$1" = 0 ]]; then
     bspc monitor "$EXTERNAL_MONITOR" -d VI VII VIII IX X
     bspc wm -O "$INTERNAL_MONITOR" "$EXTERNAL_MONITOR"
   else
-    bspc monitor "$INTERNAL_MONITOR" -d I II III IV V VI VII VIII IX X
+    bspc monitor -d I II III IV V VI VII VIII IX X
   fi
 fi
 monitor_add() {
